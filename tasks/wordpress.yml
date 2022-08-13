@@ -27,6 +27,10 @@
   become: true
   ansible.builtin.command: mv /tmp/wordpress /var/www/{{ domain_zones }}.{{ my_domain }}
 
+- name: Fetch random salts for WordPress config
+  local_action: command curl https://api.wordpress.org/secret-key/1.1/salt/
+  register: wp_salt
+
 - name: Wordpress | Config wordpress
   become: true
   ansible.builtin.template:
