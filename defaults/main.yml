@@ -1,0 +1,12 @@
+---
+# defaults file for apps-server
+
+domain_zones: www
+my_domain:    reserdukov.ru
+
+mysql_host: db1.reserdukov.ru
+
+wp_version: latest
+
+db1_ip: 192.168.31.3
+db2_ip: 192.168.31.4

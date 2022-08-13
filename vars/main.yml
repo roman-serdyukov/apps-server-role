@@ -1,0 +1,8 @@
+---
+# vars file for apps-server
+mysql_user: wordpress
+mysql_pass: wordpress
+mysql_db: wordpress
+
+ansible_user: ubuntu
+ansible_ssh_private_key: /home/roman/.ssh/id_rsa.netology.pub

@@ -1,0 +1,19 @@
+- name: PHP | Update apt cache
+  become: true
+  apt: 
+    update_cache: yes 
+    cache_valid_time: 3600
+  ignore_errors: true
+  
+- name: Install php | Apt install
+  become: True
+  ansible.builtin.apt:
+    name: 
+    - php7.4
+    - php7.4-fpm
+    - php7.4-cli
+    - php7.4-mysql
+    - php7.4-curl
+    - php7.4-json
+    state: present
+  
