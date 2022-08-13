@@ -29,7 +29,7 @@ Example Playbook
 - name: Install apps server
   hosts: servers
   roles:
-    - { role: apps-server-role, when: ansible_lsb.id == 'Ubuntu' }
+    - apps-server-role
 ```
 
 Before start
