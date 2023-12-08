@@ -2,9 +2,9 @@
 # defaults file for apps-server
 
 domain_zones: www
-my_domain:    reserdukov.ru
+my_domain:    your_domain
 
-mysql_host: db1.reserdukov.ru
+mysql_host: db1.{{ my_domain }}
 
 wp_version: latest
 

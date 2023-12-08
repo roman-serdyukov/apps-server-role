@@ -3,9 +3,9 @@ Apps-role
 
 Ansible role для установки Wordpress.
 Состоит из следующих действий:
-- Установка и настройка web-сервера nginx - nginx.yml.
-- Установка необходимых пакетов php php.yml.
-- Установка Wordpress.
+- Установка и настройка web-сервера nginx - [nginx.yml](https://github.com/roman-serdyukov/apps-server-role/blob/main/tasks/nginx.yml).
+- Установка необходимых пакетов php - [php.yml](https://github.com/roman-serdyukov/apps-server-role/blob/main/tasks/php.yml).
+- Установка Wordpress [wordpress.yml](https://github.com/roman-serdyukov/apps-server-role/blob/main/tasks/wordpress.yml).
 
 Requirements
 ------------
@@ -16,12 +16,12 @@ Requirements
 Role Variables
 --------------
 
-- domain_zones: имя поддомеена
-- my_domain:    доменное имя
-- mysql_host: сервер mysql
-- wp_version: версия Wordpress
+- domain_zones:   имя поддомена
+- my_domain:      доменное имя
+- mysql_host:     сервер mysql
+- wp_version:     версия Wordpress
 - db1_ip, db2_ip: для файла hosts
-- Имена пользователей, баз данных и пароли в папке "vars"
+- Имена пользователей, баз данных и пароли в папке "vars" (приведены здесь только для демонстрации)
 
 Example Playbook
 ----------------
