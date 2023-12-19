@@ -10,3 +10,17 @@ wp_version: latest
 
 db1_ip: 192.168.31.3
 db2_ip: 192.168.31.4
+
+#php_ver: 7.4
+php_ver: 8.1
+php_pack:
+  - php{{ php_ver }}
+  - php{{ php_ver }}-fpm
+  - php{{ php_ver }}-cli
+  - php{{ php_ver }}-mysql
+  - php{{ php_ver }}-curl
+  - php{{ php_ver }}-imagick
+  - php{{ php_ver }}-mbstring
+  - php{{ php_ver }}-xml
+  - php{{ php_ver }}-zip
+

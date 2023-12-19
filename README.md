@@ -10,7 +10,7 @@ Ansible role для установки Wordpress.
 Requirements
 ------------
 
-Работоспособность протестирована на Ubuntu 20.04.
+Работоспособность протестирована на Ubuntu 20.04 и 22.04.
 
 
 Role Variables
@@ -20,6 +20,8 @@ Role Variables
 - my_domain:      доменное имя
 - mysql_host:     сервер mysql
 - wp_version:     версия Wordpress
+- php_ver:        версия PHP
+- php_pack:       список пакетов PHP
 - db1_ip, db2_ip: для файла hosts
 - Имена пользователей, баз данных и пароли в папке "vars" (приведены здесь только для демонстрации)
 
